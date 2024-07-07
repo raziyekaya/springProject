@@ -5,10 +5,14 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 
 @Entity
 @Data
+@Getter
+@Setter
 public class Kullanici {
 	
 	@Id
@@ -29,30 +33,7 @@ public class Kullanici {
 //	@Column(length = 100)
 //	@Size(min = 4, max = 100)
 	private String adi;
-	public Long getKid() {
-		return kid;
-	}
-	public void setKid(Long kid) {
-		this.kid = kid;
-	}
-	public String getKullaniciAdi() {
-		return kullaniciAdi;
-	}
-	public void setKullaniciAdi(String kullaniciAdi) {
-		this.kullaniciAdi = kullaniciAdi;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public String getAdi() {
-		return adi;
-	}
-	public void setAdi(String adi) {
-		this.adi = adi;
-	}
+
 	
 	
 

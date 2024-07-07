@@ -19,12 +19,6 @@ public class KullaniciController {
 	
    private	final KullaniciService kullaniciService;
    
-   @Autowired
-   public KullaniciController(KullaniciService kullaniciService) {
-	   this.kullaniciService=kullaniciService;
-   }
-   
-   
    
    @PostMapping("kaydet")
    public Kullanici kaydet(@RequestBody Kullanici kullanici) {

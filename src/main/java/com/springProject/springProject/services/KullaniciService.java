@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import com.springProject.springProject.entities.Kullanici;
 import com.springProject.springProject.repositories.KullaniciRepository;
 
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -13,13 +14,6 @@ import lombok.RequiredArgsConstructor;
 public class KullaniciService {
 
 	final KullaniciRepository kullaniciRepository;
-	
-	@Autowired
-	public KullaniciService(KullaniciRepository kullaniciRepository) {
-		this.kullaniciRepository=kullaniciRepository;
-	}
-	
-	
 	
 
 	public Kullanici kaydet(Kullanici kullanici) {
